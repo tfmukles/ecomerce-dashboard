@@ -1,0 +1,29 @@
+.socal-links {
+  display: flex;
+  justify-content: center;
+  margin-block: 25px;
+
+  &.footer-socal {
+    justify-content: start;
+  }
+
+  li {
+    flex: none;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-size: 14px;
+      color: hsla(0, 0%, 100%, 0.45);
+      border: 1px solid hsla(0, 0%, 100%, 0.45);
+    }
+  }
+}

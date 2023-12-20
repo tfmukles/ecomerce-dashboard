@@ -1,0 +1,131 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+a,
+img {
+  max-width: 100%;
+  display: block;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.section-padding {
+  padding-top: 50px;
+}
+
+::selection {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+.container {
+  max-width: 1176px;
+  width: 100%;
+  margin: auto;
+  padding-inline: 10px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 33px;
+  color: var(--semi-black);
+  padding-block: 15px;
+
+  @media (max-width: $sm) {
+    font-size: 26px;
+    line-height: 29px;
+  }
+}
+
+.page-wrapper {
+  display: flex;
+
+  & > *:last-child {
+    width: 100%;
+  }
+}
+
+.mobile-overlay,
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  //padding: 20px;
+  background-color: hsla(0, 0, 0, 0.8);
+  z-index: -10;
+}
+
+.overlay {
+  z-index: 999;
+  background-color: rgba(51, 51, 51, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-close {
+    @include reset-button;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}
+
+.title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--semi-black);
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.clear-fix {
+  display: block;
+  clear: both;
+}

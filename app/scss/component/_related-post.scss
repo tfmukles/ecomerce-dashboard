@@ -1,0 +1,24 @@
+.realted-post-row {
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+
+  & > * {
+    flex: 0 0 33.333%;
+    padding-inline: 10px;
+
+    @media (max-width: $md) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  .entry .entry-body .entry-title a {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-block: 5px;
+  }
+
+  .entry .entry-body .entry-cats {
+    font-weight: 300;
+  }
+}

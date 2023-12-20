@@ -1,0 +1,86 @@
+.page-header {
+  padding-top: 42px;
+  padding-bottom: 50px;
+  background-image: url("https://d-themes.com/react/molla/demo-2/images/page-header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 400;
+      color: var(--semi-black);
+      margin-bottom: 5px;
+
+      @media (max-width: $md) {
+        font-size: 36px;
+        line-height: 40px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 32px;
+        line-height: 35px;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 22px;
+      color: var(--yellow);
+      font-weight: 400;
+
+      @media (max-width: $md) {
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+.page-nav-container {
+  padding-top: 20px;
+  padding-block: 15px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 25px;
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 300;
+      color: var(--gray);
+
+      svg {
+        margin-left: 12px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  li:not(:last-child) {
+    margin-right: 5px;
+
+    a:hover {
+      color: var(--yellow);
+    }
+  }
+}

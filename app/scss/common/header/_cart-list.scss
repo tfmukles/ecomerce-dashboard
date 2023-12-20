@@ -1,0 +1,130 @@
+.cartlist-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  position: absolute;
+  top: 100%;
+  width: 300px;
+  right: 0;
+  z-index: 999;
+  background-color: var(--white);
+  box-shadow: 5px 10px 16px rgb(51 51 51 / 5%),
+    -5px 10px 16px rgb(51 51 51 / 5%);
+  transition: 0.3s;
+
+  .dropdown-cart-list {
+    display: block !important;
+    padding-block: 5px;
+    max-height: 305px;
+    overflow-y: auto;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding-block: 8px;
+      margin-inline: 30px;
+      border-bottom: 1px solid #ebebeb;
+
+      & > *:not(:last-child) {
+        margin-right: 3px;
+      }
+
+      .cart-price {
+        font-size: 13px;
+        line-height: 24px;
+        color: #999;
+      }
+
+      .cart-remove {
+        color: #666;
+        margin-left: 3px;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      a {
+        font-size: 13px;
+        line-height: 17px;
+        color: #666;
+        transition: 0.3s;
+
+        &:hover {
+          color: var(--yellow);
+        }
+      }
+
+      figure {
+        width: 60px;
+        height: 60px;
+        flex: none;
+
+        a,
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .cart-total {
+    padding-block: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 30px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: none;
+    margin-inline: 30px;
+  }
+
+  .cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0;
+    padding-bottom: 25px;
+    margin-inline: 30px;
+
+    button {
+      padding: 9px 10px !important;
+      text-align: center;
+      color: var(--white);
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--yellow) !important;
+
+      &:first-child {
+        background: var(--yellow) !important;
+        margin-right: 15px;
+
+        &:hover {
+          color: var(--yellow);
+          background: var(--white) !important;
+        }
+      }
+
+      &:last-child {
+        color: var(--yellow);
+        padding: 6.5px 10px !important;
+
+        span {
+          display: block;
+          margin-right: 3px;
+        }
+
+        &:hover {
+          background: var(--yellow);
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

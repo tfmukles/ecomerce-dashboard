@@ -1,0 +1,46 @@
+.trendy-collention {
+  overflow: hidden;
+  cursor: grab;
+}
+
+.bulets {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    position: relative;
+    margin: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #d7d7d7;
+
+    &.active {
+      width: 18px;
+      background-color: #ccc;
+      border-color: #ccc;
+      border-radius: 30px;
+    }
+  }
+}
+
+.product-container.trendy {
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  & > * {
+    min-width: 25%;
+
+    @media (max-width: $md) {
+      min-width: 33.333%;
+    }
+
+    @media (max-width: $sm) {
+      min-width: 50%;
+    }
+  }
+}

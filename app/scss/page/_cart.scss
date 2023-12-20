@@ -1,0 +1,312 @@
+.shopping-cart {
+  .table {
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+    width: 100%;
+
+    @media (max-width: $md) {
+      width: 100%;
+      display: block;
+
+      thead,
+      th,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+
+      tr {
+        border: 1px solid #ebebeb;
+
+        &:nth-child(even) {
+          border-top: none;
+          border-bottom: none;
+        }
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        position: relative;
+        padding-block: 42px;
+      }
+    }
+
+    th {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #999;
+      text-align: left;
+    }
+
+    td {
+      font-size: 16px;
+      line-height: 30px;
+      color: var(--semi-black);
+      font-weight: 400;
+
+      .product-total {
+        color: var(--yellow);
+      }
+
+      &.remove-col {
+        @media (max-width: $md) {
+          position: absolute;
+          top: 0;
+          right: 12px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    td,
+    th {
+      vertical-align: middle;
+      padding-block: 30px;
+      border-bottom: 1px solid #ebebeb;
+      @media (max-width: $md) {
+        border: none;
+      }
+
+      @media (max-width: $md) {
+        padding-block: 6px;
+      }
+    }
+
+    .product-cart-button {
+      border: 1px solid #ebebeb;
+      display: inline-flex;
+      justify-content: space-between;
+
+      button {
+        @include reset-button;
+        padding: 0px 9px;
+        margin: 0 10px 0 0;
+        cursor: pointer;
+
+        &:last-child {
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+
+    .btn-remove {
+      @include reset-button;
+      background-color: transparent;
+      color: #ebebeb;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .cart-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .product-cart {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+    }
+  }
+
+  .product-media {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    flex-shrink: 0;
+    min-width: 60px;
+
+    @media (max-width: $md) {
+      margin: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+      background-color: #f9f9f9;
+    }
+  }
+
+  .product-title {
+    display: inline-block;
+  }
+
+  .cart-total {
+    min-width: 350px;
+  }
+
+  .summary-container {
+    margin-left: 20px;
+    max-width: 330px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media (max-width: $md) {
+      margin: 0;
+      margin-top: 10px;
+      max-width: none;
+      width: 100%;
+    }
+
+    .summary-cart {
+      border-radius: 6px;
+      border: 1px dashed #d7d7d7;
+      background-color: #f9f9f9;
+      padding: 30px;
+
+      .summary-shipping-estimate td {
+        border-bottom: 1px solid #ebebeb;
+
+        button {
+          @include reset-button;
+          background-color: transparent;
+          font-size: 14px;
+          line-height: 26px;
+          color: #999;
+          font-weight: 300;
+          border-bottom: 1px solid #ccc;
+          cursor: pointer;
+          padding-top: 18px;
+
+          &:hover {
+            color: var(--yellow);
+            border-color: var(--yellow);
+          }
+        }
+      }
+
+      .summary-total td {
+        color: var(--yellow);
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+      }
+
+      .table-summary {
+        td {
+          padding-block: 24px;
+        }
+
+        .summary-shipping-row td {
+          padding: 2px;
+        }
+
+        .summary-shipping td {
+          padding-block: 15px;
+        }
+
+        .summary-shipping-estimate {
+          padding-top: 13px;
+        }
+
+        .summary-total td {
+          padding-top: 18px;
+          padding-bottom: 20px;
+        }
+      }
+
+      .summary-subtotal td {
+        border-bottom: 1px solid #ebebeb;
+      }
+
+      .summary-title {
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--semi-black);
+        font-weight: 400;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+      }
+
+      .radio-button {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 26px;
+        color: var(--semi-black);
+        position: relative;
+
+        label {
+          margin-left: 15px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 6px;
+            top: 50%;
+            transform: translateY(-50%) scale(0);
+            width: 6px;
+            height: 6px;
+            background-color: var(--yellow);
+            border-radius: 50%;
+            transition: 0.3s;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1px solid #ebebeb;
+          }
+        }
+
+        input {
+          opacity: 0;
+          &:checked + label {
+            &::after {
+              border-color: var(--yellow);
+            }
+            &::before {
+              transform: translateY(-50%) scale(1);
+            }
+          }
+        }
+      }
+    }
+
+    .process-to {
+      @include reset-button;
+      border: 1px solid var(--yellow);
+      background-color: transparent;
+      width: 100%;
+      padding-block: 10px;
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      color: var(--yellow);
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--yellow);
+      }
+    }
+  }
+}

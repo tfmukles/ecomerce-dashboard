@@ -1,0 +1,46 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+
+  &.product-tabs {
+    margin-bottom: 0;
+
+    li {
+      padding: 12px 45px;
+    }
+  }
+
+  li {
+    text-align: center;
+    color: var(--gray);
+    padding: 6px 15px;
+    position: relative;
+
+    .underline {
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      width: 100%;
+      height: 1px;
+      background-color: var(--yellow);
+      display: block;
+    }
+
+    // &.active {
+    //   color: var(--yellow);
+    //   border-bottom: 1px solid var(--yellow);
+    // }
+  }
+
+  button {
+    @include reset-button;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+}

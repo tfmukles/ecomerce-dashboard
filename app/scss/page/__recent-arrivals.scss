@@ -1,0 +1,25 @@
+.product-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & > * {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 10px;
+
+    @media (max-width: $md) {
+      flex-basis: 33.333%;
+      max-width: 33.333%;
+    }
+
+    @media (max-width: $sm) {
+      flex-basis: 50%;
+      max-width: 50%;
+
+      .ratings-container {
+        display: none;
+      }
+    }
+  }
+}
