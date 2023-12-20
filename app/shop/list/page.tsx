@@ -1,3 +1,5 @@
+"use client";
+
 import {
   DefaultGrid,
   FourByTwo,
@@ -6,6 +8,8 @@ import {
 } from "@/app/icons/grid-icons";
 import BreadCrums from "@/ui/helpers/breadcrums";
 import ProductHeader from "@/ui/helpers/product-header";
+import Product from "@/ui/product";
+import Widget from "@/ui/widget";
 import { useState } from "react";
 
 const GridSystem = [
