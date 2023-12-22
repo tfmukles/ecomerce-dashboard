@@ -12,12 +12,16 @@ export const BrandSlider = () => {
   const width = useDragConstraints({ target: contianerRef });
 
   return (
-    <motion.div ref={contianerRef} style={{ overflow: "hidden" }}>
+    <motion.div
+      className="relative"
+      ref={contianerRef}
+      style={{ overflow: "hidden" }}
+    >
       <motion.div
         drag="x"
         dragElastic={0.1}
         dragConstraints={{ right: 0, left: -width }}
-        className="brands"
+        className="brands "
       >
         {[...Array(10)].map((item, i) => (
           <div className="brand" key={i}>

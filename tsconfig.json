@@ -20,7 +20,7 @@
     ],
     "paths": {
       "@/ui/*": ["./app/ui/*"],
-      "@/hooks/*": ["./app/lib/hooks*"],
+      "@/hooks/*": ["./app/lib/hooks/*"],
       "@/*": ["./*"]
     }
   },
