@@ -7,7 +7,7 @@
   width: 300px;
   right: 0;
   z-index: 999;
-  background-color: var(--white);
+  background-color: $white;
   box-shadow: 5px 10px 16px rgb(51 51 51 / 5%),
     -5px 10px 16px rgb(51 51 51 / 5%);
   transition: 0.3s;
@@ -52,7 +52,7 @@
         transition: 0.3s;
 
         &:hover {
-          color: var(--yellow);
+          color: $pirmary-color;
         }
       }
 
@@ -94,25 +94,25 @@
     button {
       padding: 9px 10px !important;
       text-align: center;
-      color: var(--white);
+      color: $white;
       flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid var(--yellow) !important;
+      border: 1px solid $pirmary-color !important;
 
       &:first-child {
-        background: var(--yellow) !important;
+        background: $pirmary-color !important;
         margin-right: 15px;
 
         &:hover {
-          color: var(--yellow);
-          background: var(--white) !important;
+          color: $pirmary-color;
+          background: $white !important;
         }
       }
 
       &:last-child {
-        color: var(--yellow);
+        color: $pirmary-color;
         padding: 6.5px 10px !important;
 
         span {
@@ -121,8 +121,8 @@
         }
 
         &:hover {
-          background: var(--yellow);
-          color: var(--white);
+          background: $pirmary-color;
+          color: $white;
         }
       }
     }

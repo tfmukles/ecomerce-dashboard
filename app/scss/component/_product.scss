@@ -31,7 +31,7 @@
     font-size: 13px;
     line-height: 13px;
     font-weight: 400;
-    color: var(--white);
+    color: $white;
     position: absolute;
     left: 20px;
     top: 20px;
@@ -115,7 +115,7 @@
 
         &::after {
           width: 100%;
-          background-color: var(--yellow);
+          background-color: $pirmary-color;
         }
       }
     }
@@ -124,14 +124,14 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-color: var(--white);
+      background-color: $white;
       display: inline-flex;
       align-items: center;
       justify-content: center;
 
       &:hover {
-        background-color: var(--yellow);
-        color: var(--white);
+        background-color: $pirmary-color;
+        color: $white;
       }
     }
 
@@ -163,10 +163,10 @@
   font-size: 13px;
   line-height: 16px;
   font-weight: 300;
-  color: var(--gray);
+  color: $gray;
 
   &:hover {
-    color: var(--yellow);
+    color: $pirmary-color;
   }
 }
 
@@ -174,14 +174,14 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: var(--semi-black);
+  color: $semi-black;
 
   @media (max-width: $xsm) {
     font-size: 13px;
   }
 
   &:hover {
-    color: var(--yellow);
+    color: $pirmary-color;
   }
 }
 
@@ -189,7 +189,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: var(--semi-black);
+  color: $semi-black;
 
   @media (max-width: $xsm) {
     font-size: 14px;
@@ -265,8 +265,8 @@
     }
 
     &:hover {
-      background-color: var(--yellow);
-      color: var(--white);
+      background-color: $pirmary-color;
+      color: $white;
     }
   }
 }
@@ -310,15 +310,15 @@
     font-weight: 300;
 
     &:hover {
-      color: var(--yellow);
+      color: $pirmary-color;
     }
   }
 
   .product-title a {
-    color: var(--semi-black);
+    color: $semi-black;
 
     &:hover {
-      color: var(--yellow);
+      color: $pirmary-color;
     }
   }
 
@@ -326,7 +326,7 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-    color: var(--gray);
+    color: $gray;
   }
 
   .product-list-action {
@@ -338,7 +338,7 @@
     }
 
     .product-price {
-      color: var(--yellow);
+      color: $pirmary-color;
     }
 
     .ratings-container {
@@ -379,7 +379,7 @@
       }
 
       &:hover {
-        color: var(--yellow);
+        color: $pirmary-color;
       }
 
       &:last-child {
@@ -399,8 +399,8 @@
     a {
       margin-inline: 0;
       padding: 8px 25px;
-      border-color: var(--yellow);
-      color: var(--yellow);
+      border-color: $pirmary-color;
+      color: $pirmary-color;
       flex: 1;
 
       @media (max-width: $xsm) {
@@ -416,8 +416,8 @@
       }
 
       &:hover {
-        background-color: var(--yellow);
-        color: var(--white);
+        background-color: $pirmary-color;
+        color: $white;
       }
     }
   }

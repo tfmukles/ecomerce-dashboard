@@ -20,15 +20,15 @@
     text-align: center;
     font-size: 24px;
     line-height: 26px;
-    color: var(--semi-black);
+    color: $semi-black;
     font-weight: 500;
     flex: 0 0 100%;
     margin-bottom: 32px;
   }
 
   &.wrap .product-media .product-action a {
-    background-color: var(--semi-black);
-    color: var(--white);
+    background-color: $semi-black;
+    color: $white;
   }
 
   .product-title {
@@ -40,6 +40,6 @@
   }
 
   .product-price {
-    color: var(--yellow);
+    color: $pirmary-color;
   }
 }

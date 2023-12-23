@@ -49,7 +49,7 @@
       font-weight: 400;
 
       span {
-        color: var(--semi-black);
+        color: $semi-black;
       }
     }
 
@@ -79,7 +79,7 @@
           cursor: pointer;
 
           &.active svg {
-            fill: var(--semi-black);
+            fill: $semi-black;
           }
 
           svg {
@@ -91,7 +91,7 @@
       label {
         font-size: 12px;
         line-height: 18px;
-        color: var(--semi-black);
+        color: $semi-black;
         font-weight: 400;
         margin-right: 15px;
       }
@@ -147,7 +147,7 @@
           bottom: 0;
           margin: 0;
           width: 100%;
-          background-color: var(--white);
+          background-color: $white;
           border-bottom: 1px solid #ebebeb;
 
           @media (max-width: $sm) {
@@ -161,7 +161,7 @@
           }
 
           &:hover {
-            background-color: var(--yellow);
+            background-color: $pirmary-color;
           }
         }
       }

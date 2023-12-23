@@ -9,7 +9,7 @@ header {
     left: 0;
     width: 100%;
     height: auto;
-    background-color: var(--white);
+    background-color: $white;
     z-index: 999;
     box-shadow: 0 3px 6px rgba(51, 51, 51, 0.05);
     animation: slideDown 0.35s ease-out;
@@ -68,10 +68,10 @@ header {
           font-weight: 500;
           line-height: 21px;
           text-transform: uppercase;
-          color: var(--gray);
+          color: $gray;
 
           &:hover {
-            color: var(--yellow);
+            color: $pirmary-color;
           }
 
           svg {
@@ -110,7 +110,7 @@ header {
         align-items: center;
 
         &:hover {
-          color: var(--yellow);
+          color: $pirmary-color;
         }
 
         .cart-count {
@@ -122,8 +122,8 @@ header {
           border-radius: 50%;
           font-size: 10px;
           font-weight: 400;
-          color: var(--white);
-          background-color: var(--yellow);
+          color: $white;
+          background-color: $pirmary-color;
         }
       }
 

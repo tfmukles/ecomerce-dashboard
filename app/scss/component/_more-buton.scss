@@ -7,19 +7,19 @@
   text-align: center;
   width: 230px;
   margin: auto;
-  border: 1px solid var(--gray);
+  border: 1px solid$gray;
   padding: 10px 10px;
   font-size: 14px;
   line-height: 14px;
-  color: var(--semi-black);
+  color: $semi-black;
   font-weight: 300;
   margin-top: 35px;
   transition: 0.4s ease;
   text-transform: uppercase;
 
   &:hover {
-    background-color: var(--yellow);
-    color: var(--white);
+    background-color: $pirmary-color;
+    color: $white;
     border-color: transparent;
   }
 

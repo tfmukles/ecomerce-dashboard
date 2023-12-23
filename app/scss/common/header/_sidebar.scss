@@ -4,7 +4,7 @@
   right: 0px;
   bottom: 0px;
   height: 100vh;
-  background: var(--semi-black);
+  background: $semi-black;
   z-index: 30;
   box-shadow: 0.1rem 0 0.6rem 0 rgb(51 51 51 / 50%);
 
@@ -20,7 +20,7 @@
     margin-left: auto;
     padding: 12px;
     padding-bottom: 0;
-    color: var(--white);
+    color: $white;
     cursor: pointer;
 
     svg {
@@ -29,13 +29,13 @@
     }
 
     &:hover {
-      color: var(--yellow);
+      color: $pirmary-color;
     }
   }
 
   .search {
     display: flex;
-    border: 1px solid var(--yellow);
+    border: 1px solid $pirmary-color;
     margin: 20px;
 
     input {
@@ -47,7 +47,7 @@
       font-size: 12px;
       line-height: 18px;
       font-weight: 300;
-      color: var(--white);
+      color: $white;
 
       &:focus {
         border: none;
@@ -57,9 +57,9 @@
 
     button {
       @include reset-button;
-      background: var(--yellow);
+      background: $pirmary-color;
       padding: 8px 10px;
-      color: var(--white);
+      color: $white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -82,21 +82,21 @@
         padding: 10px;
         font-size: 12px;
         line-height: 18px;
-        color: var(--white);
+        color: $white;
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: 0.3s;
 
         &:hover {
-          color: var(--yellow);
+          color: $pirmary-color;
         }
       }
 
       button {
         background-color: transparent;
         border: none;
-        color: var(--white);
+        color: $white;
         svg {
           width: 18px;
           height: 18px;

@@ -20,7 +20,7 @@ const TopHeader = () => {
       </div>
 
       <div className="header-right">
-        {width > 991 ? (
+        {width! > 991 ? (
           <DropDown />
         ) : (
           <ul>

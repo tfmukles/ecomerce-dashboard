@@ -15,7 +15,7 @@
     h1 {
       font-size: 40px;
       font-weight: 400;
-      color: var(--semi-black);
+      color: $semi-black;
       margin-bottom: 5px;
 
       @media (max-width: $md) {
@@ -32,7 +32,7 @@
     h3 {
       font-size: 20px;
       line-height: 22px;
-      color: var(--yellow);
+      color: $pirmary-color;
       font-weight: 400;
 
       @media (max-width: $md) {
@@ -54,7 +54,11 @@
   border-bottom: 1px solid #ebebeb;
   margin-bottom: 25px;
 
-  ul {
+  &.mb-0 {
+    margin-bottom: 0;
+  }
+
+  ol {
     display: flex;
     align-items: center;
   }
@@ -66,7 +70,7 @@
       font-size: 14px;
       line-height: 21px;
       font-weight: 300;
-      color: var(--gray);
+      color: $gray;
 
       svg {
         margin-left: 12px;
@@ -80,7 +84,7 @@
     margin-right: 5px;
 
     a:hover {
-      color: var(--yellow);
+      color: $pirmary-color;
     }
   }
 }

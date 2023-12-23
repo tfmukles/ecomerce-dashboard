@@ -4,10 +4,10 @@ $md: 991px;
 $sm: 767px;
 $xsm: 575px;
 
-:root {
-  --white: #fff;
-  --black: #000;
-  --yellow: #cc9966;
-  --gray: #777;
-  --semi-black: #333;
-}
+$gray: #777;
+$pirmary-color: #cc9966;
+$white: #fff;
+$black: #000;
+$semi-black: #333;
+$font-priamry: "Manrope", sans-serif;
+$font-secondary: "Poppins", sans-serif;

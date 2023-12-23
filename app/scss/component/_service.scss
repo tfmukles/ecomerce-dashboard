@@ -27,7 +27,7 @@
         font-size: 18px;
         line-height: 18px;
         font-weight: 600;
-        color: var(--semi-black);
+        color: $semi-black;
         text-align: center;
         padding-block: 8px;
       }
@@ -36,7 +36,7 @@
         font-size: 14px;
         line-height: 21px;
         font-weight: 300;
-        color: var(--gray);
+        color: $gray;
         text-align: center;
       }
     }

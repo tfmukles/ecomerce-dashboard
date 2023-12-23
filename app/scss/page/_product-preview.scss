@@ -52,7 +52,7 @@
         font-size: 13px;
         line-height: 16px;
         font-weight: 400;
-        color: var(--white);
+        color: $white;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -119,7 +119,7 @@
 
         &.active {
           opacity: 1;
-          border: 1px solid var(--yellow);
+          border: 1px solid $pirmary-color;
         }
       }
     }
@@ -131,7 +131,7 @@
       font-size: 24px;
       line-height: 30px;
       font-weight: 400;
-      color: var(--semi-black);
+      color: $semi-black;
       margin-bottom: 12px;
     }
 
@@ -141,7 +141,7 @@
     }
 
     .product-price {
-      color: var(--yellow);
+      color: $pirmary-color;
       margin-bottom: 13px;
     }
 
@@ -149,7 +149,7 @@
       font-size: 14px;
       line-height: 26px;
       font-weight: 300;
-      color: var(--gray);
+      color: $gray;
       margin-bottom: 16px;
     }
 
@@ -186,7 +186,7 @@
         cursor: pointer;
         width: 20px;
         height: 20px;
-        border: 2px solid var(--white);
+        border: 2px solid $white;
         border-radius: 50%;
 
         &.active {
@@ -223,7 +223,7 @@
         }
 
         &:hover {
-          color: var(--yellow);
+          color: $pirmary-color;
         }
 
         svg {
@@ -239,7 +239,7 @@
         padding: 8px 12px;
         font-size: 14px;
         line-height: 21px;
-        color: var(--gray);
+        color: $gray;
         flex: 0 0 131px;
         max-width: 131px;
 
@@ -271,14 +271,14 @@
 
       &:hover {
         span {
-          color: var(--yellow);
-          border-bottom: 1px solid var(--yellow);
+          color: $pirmary-color;
+          border-bottom: 1px solid $pirmary-color;
         }
       }
 
       svg {
-        fill: var(--yellow);
-        stroke: var(--yellow);
+        fill: $pirmary-color;
+        stroke: $pirmary-color;
         width: 20px;
         height: 20px;
         margin-right: 8px;
@@ -306,24 +306,24 @@
         cursor: pointer;
         background-color: transparent;
         transition: 0.3s;
-        border: 1px solid var(--yellow);
-        color: var(--yellow);
+        border: 1px solid $pirmary-color;
+        color: $pirmary-color;
         text-transform: uppercase;
 
         &:hover {
-          background-color: var(--yellow);
-          color: var(--white);
+          background-color: $pirmary-color;
+          color: $white;
         }
 
         &:disabled {
-          color: var(--yellow);
-          border: 1px solid var(--yellow);
+          color: $pirmary-color;
+          border: 1px solid $pirmary-color;
           cursor: not-allowed;
           opacity: 0.4;
 
           &:hover {
-            border-color: var(--semi-black);
-            color: var(--semi-black);
+            border-color: $semi-black;
+            color: $semi-black;
           }
         }
 
@@ -348,8 +348,8 @@
         &:last-child {
           margin-left: 12px;
           &:hover {
-            color: var(--yellow);
-            border-bottom: 1px solid var(--yellow);
+            color: $pirmary-color;
+            border-bottom: 1px solid $pirmary-color;
           }
         }
       }
@@ -369,13 +369,13 @@
         }
 
         a {
-          color: var(--gray);
-          border-color: var(--gray);
+          color: $gray;
+          border-color: $gray;
           transition: 0.3s;
 
           &:hover {
-            color: var(--yellow);
-            border-color: var(--yellow);
+            color: $pirmary-color;
+            border-color: $pirmary-color;
           }
         }
       }

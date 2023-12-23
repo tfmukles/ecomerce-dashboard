@@ -26,10 +26,10 @@
       top: 50%;
       display: inline-block;
       transform: translate(-50%, -50%);
-      color: var(--semi-black);
+      color: $semi-black;
       overflow: hidden;
       height: 45px;
-      background-color: var(--white);
+      background-color: $white;
       text-transform: capitalize;
 
       &:hover {
@@ -58,14 +58,14 @@
 
       h3 {
         padding: 8px 14px;
-        background-color: var(--white);
+        background-color: $white;
         transition: 0.3s;
       }
 
       span {
         padding: 8px 14px;
-        background-color: var(--yellow);
-        color: var(--white);
+        background-color: $pirmary-color;
+        color: $white;
         display: flex;
         align-items: center;
         width: 100%;
